@@ -1,0 +1,23 @@
+name: bob
+version: 1.4.0.10
+
+default-extensions:
+  - OverloadedStrings
+  - ViewPatterns
+
+dependencies:
+  - base
+  - text
+
+library:
+  exposed-modules: Bob
+  source-dirs: src
+  ghc-options: -Wall
+
+tests:
+  test:
+    main: Tests.hs
+    source-dirs: test
+    dependencies:
+      - bob
+      - hspec
