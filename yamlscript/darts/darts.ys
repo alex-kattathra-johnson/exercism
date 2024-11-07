@@ -1,0 +1,9 @@
+!yamlscript/v0
+
+defn score(x y):
+  dist =: x * x
+  condp ge math/hypot(x y):
+    1    : 10
+    5    : 5
+    10   : 1
+    else : 0
